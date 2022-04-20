@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <br/>
+<input id="animSpeed" value="-33" type="range" min="-33" max="-1">
+<br />
+<div id="wrapper">
+    <span id="slow">slow</span>
+    <span id="fast">fast</span>
+</div>
+<br id="controlPanel">
+    <button id="shuffleArray">Shuffle Array</button>
+    <button id="bubbleSort">Bubble Sort</button>
+    <select id="selectOrder">
+        <option value="ascending">Ascending order</option>
+        <option value="descending">Descending Order</option>
+    </select>
+    <br />
+    <div id="info"></div>
+<br/>
+<div id="debug"></div>
+<br/>
+<p id="algorithmDetails">From wikipedia:<br />
+    Bubble Sort, sometimes referred to as sinking sort, is a simple sorting algorithm 
+    that repeatedly steps through the list to be sorted, compares each pair of adjacent items 
+    and swaps them if they are in wrong order. The pass through the list is repeated untill no swaps are needed.
+    which indicates that the list is sorted. Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.<br /><br />
+    Complexity:<br />
+    Worst-case: O(n<sup>2</sup>)<br />
+    Best-case: O(n)<br />
+    Average Performance: O(n<sup>2</sup>)<br /><br />
+    <pre>
+Implementation:
+input : a as an array to be sorted
+output: sorted array a
+function bubbleSort(a){
+    let swapped ;
+    do {
+        swapped = false ;
+        for(let i=0; i<a.length; i++){
+            if(a[i] > a[i+1]){
+                let temp = a[i] ;
+                a[i] = a[i+1] ;
+                swapped = true ;
+            }
+        }
+    } 
+    while(swapped);
+}
+
+</pre>
+</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

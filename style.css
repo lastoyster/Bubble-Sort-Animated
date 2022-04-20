@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#myCanvas{
+    border: solid 1px ;
+}
+#wrapper{
+    background:red;
+    overflow: auto;
+    font-family: "Times New Roman";
+}
+#slow{
+    float: left;
+}
+#fast{
+    float: right;
+}
+#algorithmDetails{
+    font-family: "Times New Roman";
+    border: solid 1px;
+}
+#animSpeed{
+    width:100%
+}
